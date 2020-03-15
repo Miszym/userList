@@ -2,7 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Header = ({ headerText }) => {
-   return <header className="header">{headerText}</header>;
+   return (
+      <header className="header" data-testid="header">
+         {headerText}
+      </header>
+   );
 };
 
 Header.propTypes = {

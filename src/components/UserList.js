@@ -10,7 +10,7 @@ const UserList = ({ userData }) => {
          username={user.username}
       ></SingleRow>
    ));
-   return <ol>{userList}</ol>;
+   return <ol data-testid="user-list">{userList}</ol>;
 };
 
 UserList.propTypes = {
